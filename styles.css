@@ -178,18 +178,27 @@ body{
     .titlez-1, .titlez-2{
         margin-left: 1em;
     }
-    .thePlayerScore{
-        width: 40%;
+    .thePlayerScore, .theComputerScore{
+        height: 130px;
     }
     .btn{
         font-size: 1em;
     }
     .box{
-        height: 500px;
+        height: 400px;
         grid-template-columns: repeat(3, 1fr);
-        grid-auto-rows: minmax(100px, 200px);
+        grid-auto-rows: minmax(80px, 200px);
         gap: 70px;
         padding: 2em;
         column-gap: 30px;
     }
+}
+@media all and (max-width: 338px){
+
+    .theResult{
+        height: calc(100% - 150px);
+        width: calc(100% - 20px);
+        font-size: 1rem;
+    }
+
 }
