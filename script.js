@@ -89,18 +89,25 @@ for (let i = 0; i <= playerMove.length -1; ++i){
         boxYourScore.textContent = playerScore;
         boxComputerScore.textContent = computerScore;
 
-        if(playerScore === 5){
-            alert("Congratulations, YOU WIN! The game will restart");
-            playerScore = 0;
-            computerScore = 0;
-            boxResult.textContent = "Choose an option"
-        }else if(computerScore === 5){
-            alert("Computer wins, maybe next time you'll win! The game will restart");
-            playerScore = 0;
-            computerScore = 0;
-            boxResult.textContent = "Choose an option"
-        }
-        boxYourScore.textContent = playerScore;
-        boxComputerScore.textContent = computerScore;
+        setTimeout(() => {
+
+            if(playerScore === 5){
+                alert("Congratulations, YOU WIN! The game will restart");
+                playerScore = 0;
+                computerScore = 0;
+                boxResult.textContent = "Choose an option"
+            }else if(computerScore === 5){
+                alert("Computer wins, maybe next time you'll win! The game will restart");
+                playerScore = 0;
+                computerScore = 0;
+                boxResult.textContent = "Choose an option"
+            }
+            boxYourScore.textContent = playerScore;
+            boxComputerScore.textContent = computerScore;
+
+
+            
+        }, 1000);
+        
 })
 }
