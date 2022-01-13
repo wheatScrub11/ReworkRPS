@@ -119,22 +119,19 @@ body{
 
 
 .btn:hover{
-    animation: tra 250ms forwards ease-in alternate infinite;
+    animation: tra 300ms forwards ease-in alternate infinite;
     
 }
 
 @keyframes tra{
     0%{
         border: .5px solid black;
-
     }
     50%{
         border: 2.5px solid black;
     }
     100%{
-        border: 5px solid black;
-        transform: scale(1.05, 1.05);
-        
+        border: 3px solid black;
     }
 }
 

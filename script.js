@@ -28,6 +28,7 @@ let playerMove = document.querySelectorAll(".btn");
 
 for (let i = 0; i <= playerMove.length -1; ++i){
     playerMove[i].addEventListener("click", e => {
+        
         if (i === 0){
             playerSelection = "rock";
         }else if(i === 1){
